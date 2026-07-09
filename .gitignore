@@ -1,0 +1,5 @@
+# Zdrojový PDF s lektorským textom nezverejňujeme (obsah je už na stránke)
+*.pdf
+
+# Lokálne nastavenia nástrojov
+.claude/
