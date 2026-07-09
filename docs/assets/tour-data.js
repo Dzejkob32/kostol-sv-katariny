@@ -107,17 +107,55 @@ const INDEX_I18N = {
     hu:"Nyitvatartás", it:"Orari di apertura", fr:"Horaires d'ouverture",
     es:"Horario de apertura", uk:"Години відвідування"
   },
-  /* TODO: doplňte skutočné otváracie hodiny (stačí prepísať texty nižšie) */
+  /* Otváracie hodiny — sezónny rozvrh.
+     Každé obdobie má názov (season) a riadky s časmi (rows).
+     Časy sú rovnaké vo všetkých jazykoch, menia sa len názvy mesiacov a dní. */
   hoursValue: {
-    sk:"Informácie o otváracích hodinách doplníme čoskoro.",
-    en:"Opening hours information coming soon.",
-    de:"Informationen zu den Öffnungszeiten folgen in Kürze.",
-    pl:"Informacje o godzinach otwarcia wkrótce.",
-    hu:"A nyitvatartási információk hamarosan elérhetők.",
-    it:"Informazioni sugli orari di apertura in arrivo.",
-    fr:"Les horaires d'ouverture seront bientôt disponibles.",
-    es:"La información sobre el horario estará disponible pronto.",
-    uk:"Інформація про години відвідування з'явиться незабаром."
+    sk:[
+      { season:"Júl – august", rows:["Po – So · 9:00 – 17:00", "Nedeľa · 13:00 – 17:00"] },
+      { season:"Jún a september", rows:["Sobota · 9:00 – 17:00", "Nedeľa · 13:00 – 17:00"] },
+      { season:"Ostatné mesiace", rows:["Zatvorené"] }
+    ],
+    en:[
+      { season:"July – August", rows:["Mon – Sat · 9:00 – 17:00", "Sunday · 13:00 – 17:00"] },
+      { season:"June & September", rows:["Saturday · 9:00 – 17:00", "Sunday · 13:00 – 17:00"] },
+      { season:"Other months", rows:["Closed"] }
+    ],
+    de:[
+      { season:"Juli – August", rows:["Mo – Sa · 9:00 – 17:00 Uhr", "Sonntag · 13:00 – 17:00 Uhr"] },
+      { season:"Juni & September", rows:["Samstag · 9:00 – 17:00 Uhr", "Sonntag · 13:00 – 17:00 Uhr"] },
+      { season:"Übrige Monate", rows:["Geschlossen"] }
+    ],
+    pl:[
+      { season:"Lipiec – sierpień", rows:["Pon – sob · 9:00 – 17:00", "Niedziela · 13:00 – 17:00"] },
+      { season:"Czerwiec i wrzesień", rows:["Sobota · 9:00 – 17:00", "Niedziela · 13:00 – 17:00"] },
+      { season:"Pozostałe miesiące", rows:["Nieczynne"] }
+    ],
+    hu:[
+      { season:"Július – augusztus", rows:["Hétfő – szombat · 9:00 – 17:00", "Vasárnap · 13:00 – 17:00"] },
+      { season:"Június és szeptember", rows:["Szombat · 9:00 – 17:00", "Vasárnap · 13:00 – 17:00"] },
+      { season:"A többi hónapban", rows:["Zárva"] }
+    ],
+    it:[
+      { season:"Luglio – agosto", rows:["Lun – sab · 9:00 – 17:00", "Domenica · 13:00 – 17:00"] },
+      { season:"Giugno e settembre", rows:["Sabato · 9:00 – 17:00", "Domenica · 13:00 – 17:00"] },
+      { season:"Altri mesi", rows:["Chiuso"] }
+    ],
+    fr:[
+      { season:"Juillet – août", rows:["Lun – sam · 9h00 – 17h00", "Dimanche · 13h00 – 17h00"] },
+      { season:"Juin et septembre", rows:["Samedi · 9h00 – 17h00", "Dimanche · 13h00 – 17h00"] },
+      { season:"Autres mois", rows:["Fermé"] }
+    ],
+    es:[
+      { season:"Julio – agosto", rows:["Lun – sáb · 9:00 – 17:00", "Domingo · 13:00 – 17:00"] },
+      { season:"Junio y septiembre", rows:["Sábado · 9:00 – 17:00", "Domingo · 13:00 – 17:00"] },
+      { season:"Resto del año", rows:["Cerrado"] }
+    ],
+    uk:[
+      { season:"Липень – серпень", rows:["Пн – Сб · 9:00 – 17:00", "Неділя · 13:00 – 17:00"] },
+      { season:"Червень і вересень", rows:["Субота · 9:00 – 17:00", "Неділя · 13:00 – 17:00"] },
+      { season:"Інші місяці", rows:["Зачинено"] }
+    ]
   },
   contactLabel: {
     sk:"Kontakt", en:"Contact", de:"Kontakt", pl:"Kontakt", hu:"Kapcsolat",

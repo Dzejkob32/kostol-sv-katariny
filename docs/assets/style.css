@@ -100,6 +100,16 @@ h1{
   font-size:12px; color: var(--gold); margin:0 0 6px;
 }
 .info-card p{ margin:0; line-height:1.6; }
+
+/* otváracie hodiny — sezónny rozvrh */
+.hours{ display:flex; flex-direction:column; gap:12px; }
+.hours-period{ padding-left:12px; border-left:2px solid var(--gold); }
+.hours-period + .hours-period{ margin-top:0; }
+.hours-season{
+  font-family:'Cormorant Garamond', serif; font-weight:600; font-size:15px;
+  letter-spacing:0.02em; color: var(--wine-deep); margin:0 0 2px !important;
+}
+.hours-time{ font-size:15px; line-height:1.5 !important; color: var(--ink-soft); }
 .stop-list{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
 .stop-list a{
   display:block; padding:12px 16px; border:1px solid var(--line); border-radius:8px;

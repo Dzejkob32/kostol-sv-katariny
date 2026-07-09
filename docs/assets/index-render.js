@@ -19,7 +19,7 @@ function render(){
   document.getElementById("addressLabel").textContent = t("addressLabel");
   document.getElementById("addressValue").textContent = t("addressValue");
   document.getElementById("hoursLabel").textContent = t("hoursLabel");
-  document.getElementById("hoursValue").textContent = t("hoursValue");
+  renderHours(t("hoursValue"));
   document.getElementById("contactLabel").textContent = t("contactLabel");
   document.getElementById("contactValue").textContent = t("contactValue");
   document.getElementById("stopsHeading").textContent = t("stopsHeading");
@@ -51,6 +51,27 @@ function render(){
   });
 
   renderLangSwitcher();
+}
+
+function renderHours(periods){
+  const box = document.getElementById("hoursValue");
+  box.innerHTML = "";
+  box.className = "hours";
+  periods.forEach(p => {
+    const block = document.createElement("div");
+    block.className = "hours-period";
+    const season = document.createElement("p");
+    season.className = "hours-season";
+    season.textContent = p.season;
+    block.appendChild(season);
+    p.rows.forEach(row => {
+      const line = document.createElement("p");
+      line.className = "hours-time";
+      line.textContent = row;
+      block.appendChild(line);
+    });
+    box.appendChild(block);
+  });
 }
 
 function renderLangSwitcher(){
