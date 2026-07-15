@@ -78,12 +78,13 @@ h1{
   transition: width .3s ease;
 }
 
-/* ---------- prepínač jazykov (vlajky) ---------- */
+/* ---------- prepínač jazykov (vlajky) ----------
+   Zámerne sa zalamuje do riadkov a NEposúva sa vodorovne: návštevník musí
+   vidieť všetkých 9 jazykov naraz, inak svoj nenájde. Na úzkych displejoch
+   preto ukazujeme len vlajku a skratku (🇩🇪 DE), na širokých celý názov. */
 .chips{
-  display:flex; gap:6px; overflow-x:auto; padding:2px 0 8px;
-  margin-bottom:16px; -webkit-overflow-scrolling:touch;
+  display:flex; flex-wrap:wrap; gap:6px; padding:2px 0 8px; margin-bottom:16px;
 }
-.chips::-webkit-scrollbar{ height:0; }
 .chip{
   flex:0 0 auto; display:flex; align-items:center; gap:6px;
   padding:8px 13px; border:1px solid var(--line); border-radius:20px;
@@ -97,6 +98,14 @@ h1{
   font-weight:600; color:var(--wine-deep);
 }
 .chip .flag{ font-size:17px; line-height:1; }
+.chip .code{ display:none; }
+
+@media (max-width:560px){
+  .chips{ gap:5px; }
+  .chip{ padding:7px 10px; gap:5px; font-size:13px; }
+  .chip .name{ display:none; }
+  .chip .code{ display:inline; }
+}
 
 /* ---------- panel s textom ---------- */
 .text-panel{

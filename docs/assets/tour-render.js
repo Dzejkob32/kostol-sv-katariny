@@ -93,9 +93,12 @@ function renderLangSwitcher(){
     b.className = "chip" + (code === currentLang ? " on" : "");
     b.setAttribute("lang", code);
     b.setAttribute("aria-label", LANG_LABELS[code] || code);
-    b.innerHTML = '<span class="flag"></span><span class="code"></span>';
+    /* Skratka (SK) sa zobrazí na úzkych displejoch, celý názov na širokých —
+       rieši to CSS, aby sa všetkých 9 jazykov zmestilo naraz bez posúvania. */
+    b.innerHTML = '<span class="flag"></span><span class="code"></span><span class="name"></span>';
     b.querySelector(".flag").textContent = LANG_FLAGS[code] || "";
     b.querySelector(".code").textContent = LANG_SHORT[code] || code;
+    b.querySelector(".name").textContent = LANG_LABELS[code] || code;
     b.onclick = () => {
       currentLang = code;
       localStorage.setItem("guideLang", currentLang);
