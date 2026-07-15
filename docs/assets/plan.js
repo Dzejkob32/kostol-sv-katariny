@@ -11,7 +11,7 @@
 /* Poloha zastávok v súradniciach pôdorysu (viewBox 0 0 340 584, posun +16). */
 const PLAN_POS = {
   1:  { x:170, y:300 },   // stred lode
-  2:  { x:105, y:418 },   // severný vchod
+  2:  { x:105, y:471 },   // severný vchod — v západnom trávé, naľavo od chórusu
   3:  { x:81,  y:353 },   // kaplnka Piety
   4:  { x:81,  y:278 },   // sv. Ján Evanjelista
   5:  { x:81,  y:203 },   // Božské srdce a krstiteľnica
@@ -59,8 +59,8 @@ function planMarkup(lang){
 '    <rect class="plan-room" x="235" y="320" width="48" height="66"/>' +
 '    <rect class="plan-room" x="235" y="395" width="48" height="66"/>' +
      /* vchod */
-'    <text class="plan-entry-lbl" x="42" y="408">' + t("entrance") + '</text>' +
-'    <line class="plan-entry" x1="42" y1="418" x2="100" y2="418" marker-end="url(#planAr)"/>' +
+'    <text class="plan-entry-lbl" x="42" y="461">' + t("entrance") + '</text>' +
+'    <line class="plan-entry" x1="42" y1="471" x2="88" y2="471" marker-end="url(#planAr)"/>' +
 '    <g class="plan-dots"></g>' +
 '  </g>' +
 '</svg>';
