@@ -28,6 +28,9 @@ function render(){
   document.getElementById("extrasHeading").textContent = t("extrasHeading");
   document.getElementById("footerLabel").textContent = FOOTER_LABEL[currentLang];
 
+  document.getElementById("planTitle").textContent = PLAN_I18N.title[currentLang];
+  renderPlan(document.getElementById("planHolder"), currentLang, { base: "" });
+
   renderGroups();
   renderExtras();
   renderLangSwitcher();

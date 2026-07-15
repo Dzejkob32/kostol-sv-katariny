@@ -52,6 +52,31 @@ const GROUPS = [
     es:"Parte occidental", uk:"Західна частина" } }
 ];
 
+/* Popisky plánu kostola (assets/plan.js) */
+const PLAN_I18N = {
+  title: {
+    sk:"Plán kostola", cs:"Plán kostela", en:"Church plan", de:"Grundriss der Kirche",
+    pl:"Plan kościoła", hu:"A templom alaprajza", it:"Pianta della chiesa",
+    fr:"Plan de l'église", es:"Plano de la iglesia", uk:"План церкви"
+  },
+  east: {
+    sk:"↑ východ", cs:"↑ východ", en:"↑ east", de:"↑ Osten", pl:"↑ wschód",
+    hu:"↑ kelet", it:"↑ est", fr:"↑ est", es:"↑ este", uk:"↑ схід"
+  },
+  entrance: {
+    sk:"vchod", cs:"vchod", en:"entrance", de:"Eingang", pl:"wejście",
+    hu:"bejárat", it:"ingresso", fr:"entrée", es:"entrada", uk:"вхід"
+  },
+  sacristy: {
+    sk:"sakristia", cs:"sakristie", en:"sacristy", de:"Sakristei", pl:"zakrystia",
+    hu:"sekrestye", it:"sacrestia", fr:"sacristie", es:"sacristía", uk:"захристія"
+  },
+  youAreHere: {
+    sk:"Tu ste", cs:"Zde jste", en:"You are here", de:"Sie sind hier", pl:"Tutaj jesteś",
+    hu:"Ön itt van", it:"Siete qui", fr:"Vous êtes ici", es:"Usted está aquí", uk:"Ви тут"
+  }
+};
+
 const NAV_PREV = {
   sk:"Predchádzajúca", cs:"Předchozí", en:"Previous", de:"Vorherige", pl:"Poprzednia",
   hu:"Előző", it:"Precedente", fr:"Précédente", es:"Anterior", uk:"Попередня"

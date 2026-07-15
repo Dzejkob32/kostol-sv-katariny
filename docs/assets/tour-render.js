@@ -39,8 +39,21 @@ function render(){
   });
 
   renderProgress();
+  renderStopPlan();
   renderNav();
   renderLangSwitcher();
+}
+
+/* Plán so zvýraznenou aktuálnou zastávkou — návštevník hneď vidí, kde stojí.
+   Dodatky (sv. Katarína, história) nie sú miestom v kostole, tam sa plán nezobrazí. */
+function renderStopPlan(){
+  const box = document.getElementById("planBox");
+  if (!box) return;
+  if (!isNumbered){ box.style.display = "none"; return; }
+  box.style.display = "";
+  document.getElementById("planTitle").textContent =
+    PLAN_I18N.title[currentLang] + " · " + PLAN_I18N.youAreHere[currentLang];
+  renderPlan(document.getElementById("planHolder"), currentLang, { active: stopId, base: "../" });
 }
 
 function renderProgress(){

@@ -120,6 +120,42 @@ h1{
   float:left; line-height:0.75; padding-right:8px; padding-top:4px; color: var(--gold);
 }
 
+/* ---------- plán kostola ---------- */
+.plan-box{
+  background:var(--paper); border:1px solid var(--line-gold); border-radius:12px;
+  padding:14px 12px 10px; box-shadow:0 1px 3px rgba(46,36,24,0.05);
+}
+.plan-title{
+  font-family:'Cormorant Garamond', serif; letter-spacing:0.14em; text-transform:uppercase;
+  font-size:11px; color:var(--gold); text-align:center; margin:0 0 8px;
+}
+.plan-svg{ display:block; width:100%; height:auto; margin:0 auto; }
+/* na zastávke stačí menší plán, na úvodnej stránke môže byť väčší */
+.plan-box.compact{ margin-bottom:16px; }
+.plan-box.compact .plan-svg{ max-width:240px; }
+.plan-box.full .plan-svg{ max-width:320px; }
+
+.plan-nave{ fill:rgba(255,255,255,.55); stroke:var(--wine-deep); stroke-width:2.5; }
+.plan-presb{ fill:rgba(110,42,42,.07); stroke:var(--wine-deep); stroke-width:2.5; }
+.plan-room{ fill:rgba(255,255,255,.5); stroke:var(--gold); stroke-width:1.5; }
+.plan-aux{ fill:rgba(46,36,24,.05); stroke:var(--ink-soft); stroke-width:1; stroke-dasharray:3 2; }
+.plan-dir{ font:italic 10px Georgia, serif; fill:var(--ink-soft); text-anchor:middle; }
+.plan-room-lbl{ font:9px 'Source Serif 4', Georgia, serif; fill:var(--ink-soft); text-anchor:middle; }
+.plan-entry{ fill:none; stroke:#2F7DBF; stroke-width:3; }
+.plan-entry-lbl{ font:italic 10px Georgia, serif; fill:#2F7DBF; }
+
+.plan-dot{ cursor:pointer; }
+.plan-dot .dot-hit{ fill:transparent; stroke:none; }
+.plan-dot .dot-face{ fill:var(--parchment); stroke:var(--gold); stroke-width:1.5; transition:fill .15s ease; pointer-events:none; }
+.plan-dot text{
+  font-family:'Cormorant Garamond', serif; font-size:11px; font-weight:700;
+  fill:var(--wine-deep); text-anchor:middle; pointer-events:none;
+}
+.plan-dot:hover .dot-face{ fill:rgba(168,130,60,.3); }
+/* aktuálna zastávka — „tu ste“ */
+.plan-dot.on .dot-face{ fill:var(--wine); stroke:var(--wine-deep); stroke-width:2; }
+.plan-dot.on text{ fill:#fff; }
+
 /* ---------- ozdobný predel ---------- */
 .orn{ display:flex; align-items:center; gap:10px; margin:24px 0; }
 .orn i{ flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold)); }
