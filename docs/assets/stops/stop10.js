@@ -2,6 +2,7 @@
 STOPS[10] = {
   title: {
     sk: "Renesančná predsieň",
+    cs: "Renesanční předsíň",
     en: "The Renaissance Porch",
     de: "Die Renaissance-Vorhalle",
     pl: "Renesansowy przedsionek",
@@ -16,6 +17,11 @@ STOPS[10] = {
       "Táto renesančná predsieň bola ku kostolu pristavaná v roku 1555. Svedčí o tom maľba s trojicou erbov: uhorským a erbom mesta Banská Štiavnica s dvoma jaštericami a písmenom S (Selmeczbánya = Banská Štiavnica); medzi nimi je dole menší erb hlavného donátora stavby Pavla Rubigalla.",
       "V hornej časti maľby je letopočet 1555 — rok, keď sa kostol stal farským kostolom, pretože dovtedajší farský Kostol Panny Márie bol prestavaný na protitureckú pevnosť, dnešný Starý zámok.",
       "Pod maľbou sa nachádza kamenný portál, ktorý bol pôvodným vstupom do kostola. Je tu tiež rozmerný barokový obraz Ukrižovania z 18. storočia. Oltár nachádzajúci sa v tejto predsieni bol pravdepodobne prinesený z Kostola Panny Márie Snežnej (Dom smútku)."
+    ],
+    cs: [
+      "Tato renesanční předsíň byla ke kostelu přistavěna v roce 1555. Svědčí o tom malba s trojicí erbů: uherským a erbem města Banská Štiavnica se dvěma ještěrkami a písmenem S (Selmeczbánya = Banská Štiavnica); mezi nimi je dole menší erb hlavního donátora stavby Pavla Rubigalla.",
+      "V horní části malby je letopočet 1555 — rok, kdy se kostel stal farním kostelem, protože dosavadní farní Kostel Panny Marie byl přestavěn na protitureckou pevnost, dnešní Starý zámek.",
+      "Pod malbou se nachází kamenný portál, který byl původním vstupem do kostela. Je zde také rozměrný barokní obraz Ukřižování z 18. století. Oltář nacházející se v této předsíni byl pravděpodobně přinesen z Kostela Panny Marie Sněžné (Dům smutku)."
     ],
     en: [
       "This Renaissance porch was added to the church in 1555. This is attested by a painting with three coats of arms: the Hungarian one and that of the town of Banská Štiavnica with two lizards and the letter S (Selmeczbánya = Banská Štiavnica); between them, below, is the smaller coat of arms of Pavol Rubigall, the main donor of the construction.",

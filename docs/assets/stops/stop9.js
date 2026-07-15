@@ -2,6 +2,7 @@
 STOPS[9] = {
   title: {
     sk: "Kaplnka Panny Márie Lurdskej",
+    cs: "Kaple Panny Marie Lurdské",
     en: "The Chapel of Our Lady of Lourdes",
     de: "Die Kapelle Unserer Lieben Frau von Lourdes",
     pl: "Kaplica Matki Bożej z Lourdes",
@@ -16,6 +17,11 @@ STOPS[9] = {
       "Kaplnka s oltárom Panny Márie Lurdskej architektonicky nezapadá medzi ostatných päť kaplniek — bola prestavaná v neskoršom období.",
       "Slúži aj ako Boží hrob, ktorý stráži dvojica rímskych vojakov.",
       "Pôvodne sa tu nachádzal ďalší vchod do kostola, tak ako aj na druhej strane, no neskôr kvôli prestavbe chórusu bol tento vchod zrušený a prerobený na kaplnku."
+    ],
+    cs: [
+      "Kaple s oltářem Panny Marie Lurdské architektonicky nezapadá mezi ostatních pět kaplí — byla přestavěna v pozdějším období.",
+      "Slouží také jako Boží hrob, který střeží dvojice římských vojáků.",
+      "Původně se zde nacházel další vchod do kostela, stejně jako na druhé straně, ale později kvůli přestavbě kůru byl tento vchod zrušen a přeměněn na kapli."
     ],
     en: [
       "The chapel with the altar of Our Lady of Lourdes does not architecturally match the other five chapels — it was rebuilt in a later period.",

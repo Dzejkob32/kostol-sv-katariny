@@ -2,6 +2,7 @@
 STOPS[11] = {
   title: {
     sk: "Chórus a organ",
+    cs: "Kůr a varhany",
     en: "The Choir Loft and the Organ",
     de: "Die Empore und die Orgel",
     pl: "Chór i organy",
@@ -15,6 +16,10 @@ STOPS[11] = {
     sk: [
       "Chórus bol postavený koncom 19. storočia a má dve podlažia. Nachádza sa tu organ z dielne Riegerovcov v Budapešti z roku 1900. Organ je dvojmanuálový a má 16 registrov. Jeho výrobné označenie je opus č. 816.",
       "Sme na konci našej prehliadky — ďakujeme vám za pozornosť a prajeme vám požehnaný deň."
+    ],
+    cs: [
+      "Kůr byl postaven koncem 19. století a má dvě podlaží. Nacházejí se zde varhany z dílny Riegerů v Budapešti z roku 1900. Varhany jsou dvoumanuálové a mají 16 rejstříků. Jejich výrobní označení je opus č. 816.",
+      "Jsme na konci naší prohlídky — děkujeme vám za pozornost a přejeme vám požehnaný den."
     ],
     en: [
       "The choir loft was built at the end of the 19th century and has two storeys. It houses an organ from the Rieger workshop in Budapest, dating from 1900. The organ has two manuals and 16 stops. Its maker's designation is opus no. 816.",

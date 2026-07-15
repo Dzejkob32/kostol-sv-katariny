@@ -2,6 +2,7 @@
 STOPS[5] = {
   title: {
     sk: "Kaplnka Božského srdca a krstiteľnica",
+    cs: "Kaple Božského srdce a křtitelnice",
     en: "The Chapel of the Sacred Heart and the Baptismal Font",
     de: "Die Herz-Jesu-Kapelle und das Taufbecken",
     pl: "Kaplica Serca Jezusowego i chrzcielnica",
@@ -17,6 +18,12 @@ STOPS[5] = {
       "Na vitráži je zobrazená Svätá Trojica: Boh Otec vpravo drží kráľovské žezlo, vľavo Ježiš drží kríž a obaja symbolicky stoja na zemeguli; nad nimi sa vznáša Duch Svätý v podobe holubice. Vitráž daroval Ján Flautner, mlynár z Banskej Štiavnice.",
       "V kaplnke je umiestnená neskorogotická kamenná krstiteľnica z 15. storočia. Má kalichový tvar; zo štvorlístkového základu vyrastá noha členená prútmi a výžľabkami, v ktorých sú striedavo umiestnené podstavce pre sochy — sošky z podstavcov však boli odcudzené.",
       "Na stene visí obraz svätého Jána Krstiteľa ako malého chlapca z 18. storočia; originál tohto obrazu sa nachádza v galérii vo Florencii. Pri kaplnke, na okraji presbytéria, stojí socha svätého Jozefa s Ježiškom z 18. storočia."
+    ],
+    cs: [
+      "Mezi kaplemi je umístěna barokní socha svaté Lucie z 18. století. V poslední kapli severní strany, situované vedle presbytáře, se nachází oltář Božského srdce Ježíšova.",
+      "Na vitráži je zobrazena Svatá Trojice: Bůh Otec vpravo drží královské žezlo, vlevo Ježíš drží kříž a oba symbolicky stojí na zeměkouli; nad nimi se vznáší Duch Svatý v podobě holubice. Vitráž daroval Ján Flautner, mlynář z Banské Štiavnice.",
+      "V kapli je umístěna pozdně gotická kamenná křtitelnice z 15. století. Má kalichový tvar; ze čtyřlístkového základu vyrůstá noha členěná pruty a výžlabky, v nichž jsou střídavě umístěny podstavce pro sochy — sošky z podstavců však byly odcizeny.",
+      "Na stěně visí obraz svatého Jana Křtitele jako malého chlapce z 18. století; originál tohoto obrazu se nachází v galerii ve Florencii. U kaple, na okraji presbytáře, stojí socha svatého Josefa s Ježíškem z 18. století."
     ],
     en: [
       "Between the chapels stands a Baroque statue of St Lucy from the 18th century. The last chapel on the north side, next to the presbytery, houses the altar of the Sacred Heart of Jesus.",

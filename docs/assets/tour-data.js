@@ -9,54 +9,60 @@
 const STOPS = {};          // zastávky sa registrujú zo súborov assets/stops/*.js
 const STOP_COUNT = 11;     // počet zastávok prehliadky
 
+/* Poradie kľúčov určuje poradie jazykov v prepínači — slovenčina, čeština, potom ostatné. */
 const LANG_LABELS = {
-  sk:"Slovenčina", en:"English", de:"Deutsch", pl:"Polski", hu:"Magyar",
+  sk:"Slovenčina", cs:"Čeština", en:"English", de:"Deutsch", pl:"Polski", hu:"Magyar",
   it:"Italiano", fr:"Français", es:"Español", uk:"Українська"
 };
 /* Vlajky a skratky pre prepínač jazykov (chips) */
 const LANG_FLAGS = {
-  sk:"🇸🇰", en:"🇬🇧", de:"🇩🇪", pl:"🇵🇱", hu:"🇭🇺",
+  sk:"🇸🇰", cs:"🇨🇿", en:"🇬🇧", de:"🇩🇪", pl:"🇵🇱", hu:"🇭🇺",
   it:"🇮🇹", fr:"🇫🇷", es:"🇪🇸", uk:"🇺🇦"
 };
 const LANG_SHORT = {
-  sk:"SK", en:"EN", de:"DE", pl:"PL", hu:"HU",
+  sk:"SK", cs:"CS", en:"EN", de:"DE", pl:"PL", hu:"HU",
   it:"IT", fr:"FR", es:"ES", uk:"UK"
 };
 const EYEBROW = {
-  sk:"Zastávka", en:"Stop", de:"Station", pl:"Przystanek", hu:"Állomás",
+  sk:"Zastávka", cs:"Zastávka", en:"Stop", de:"Station", pl:"Przystanek", hu:"Állomás",
   it:"Tappa", fr:"Étape", es:"Parada", uk:"Зупинка"
 };
 
 /* Zoskupenie zastávok podľa častí kostola — poradie zodpovedá trase prehliadky. */
 const GROUPS = [
   { stops:[1,2], label:{
-    sk:"Loď kostola", en:"The Nave", de:"Das Kirchenschiff", pl:"Nawa kościoła",
-    hu:"A templomhajó", it:"La navata", fr:"La nef", es:"La nave", uk:"Нава церкви" } },
+    sk:"Loď kostola", cs:"Loď kostela", en:"The Nave", de:"Das Kirchenschiff",
+    pl:"Nawa kościoła", hu:"A templomhajó", it:"La navata", fr:"La nef", es:"La nave",
+    uk:"Нава церкви" } },
   { stops:[3,4,5], label:{
-    sk:"Severná strana", en:"North Side", de:"Nordseite", pl:"Strona północna",
-    hu:"Északi oldal", it:"Lato nord", fr:"Côté nord", es:"Lado norte", uk:"Північний бік" } },
+    sk:"Severná strana", cs:"Severní strana", en:"North Side", de:"Nordseite",
+    pl:"Strona północna", hu:"Északi oldal", it:"Lato nord", fr:"Côté nord",
+    es:"Lado norte", uk:"Північний бік" } },
   { stops:[6], label:{
-    sk:"Presbytérium", en:"The Presbytery", de:"Der Chorraum", pl:"Prezbiterium",
-    hu:"A szentély", it:"Il presbiterio", fr:"Le chœur", es:"El presbiterio", uk:"Пресвітерій" } },
+    sk:"Presbytérium", cs:"Presbytář", en:"The Presbytery", de:"Der Chorraum",
+    pl:"Prezbiterium", hu:"A szentély", it:"Il presbiterio", fr:"Le chœur",
+    es:"El presbiterio", uk:"Пресвітерій" } },
   { stops:[7,8,9], label:{
-    sk:"Južná strana", en:"South Side", de:"Südseite", pl:"Strona południowa",
-    hu:"Déli oldal", it:"Lato sud", fr:"Côté sud", es:"Lado sur", uk:"Південний бік" } },
+    sk:"Južná strana", cs:"Jižní strana", en:"South Side", de:"Südseite",
+    pl:"Strona południowa", hu:"Déli oldal", it:"Lato sud", fr:"Côté sud",
+    es:"Lado sur", uk:"Південний бік" } },
   { stops:[10,11], label:{
-    sk:"Západná časť", en:"West End", de:"Westteil", pl:"Część zachodnia",
-    hu:"Nyugati rész", it:"Parte occidentale", fr:"Partie ouest", es:"Parte occidental",
-    uk:"Західна частина" } }
+    sk:"Západná časť", cs:"Západní část", en:"West End", de:"Westteil",
+    pl:"Część zachodnia", hu:"Nyugati rész", it:"Parte occidentale", fr:"Partie ouest",
+    es:"Parte occidental", uk:"Західна частина" } }
 ];
 
 const NAV_PREV = {
-  sk:"Predchádzajúca", en:"Previous", de:"Vorherige", pl:"Poprzednia", hu:"Előző",
-  it:"Precedente", fr:"Précédente", es:"Anterior", uk:"Попередня"
+  sk:"Predchádzajúca", cs:"Předchozí", en:"Previous", de:"Vorherige", pl:"Poprzednia",
+  hu:"Előző", it:"Precedente", fr:"Précédente", es:"Anterior", uk:"Попередня"
 };
 const NAV_NEXT = {
-  sk:"Ďalšia", en:"Next", de:"Nächste", pl:"Następna", hu:"Következő",
+  sk:"Ďalšia", cs:"Další", en:"Next", de:"Nächste", pl:"Następna", hu:"Következő",
   it:"Successiva", fr:"Suivante", es:"Siguiente", uk:"Наступна"
 };
 const NAV_HINT = {
   sk:"Naskenujte ďalší QR kód pri postupe po trase, alebo použite šípky.",
+  cs:"Naskenujte další QR kód při postupu po trase, nebo použijte šipky.",
   en:"Scan the next QR code as you continue along the route, or use the arrows.",
   de:"Scannen Sie den nächsten QR-Code auf dem Weg, oder nutzen Sie die Pfeile.",
   pl:"Zeskanuj kolejny kod QR na trasie lub skorzystaj ze strzałek.",
@@ -67,12 +73,14 @@ const NAV_HINT = {
   uk:"Відскануйте наступний QR-код на маршруті або скористайтеся стрілками."
 };
 const BACK_HOME = {
-  sk:"späť na úvodnú stránku", en:"back to the main page", de:"zurück zur Startseite",
+  sk:"späť na úvodnú stránku", cs:"zpět na úvodní stránku",
+  en:"back to the main page", de:"zurück zur Startseite",
   pl:"powrót do strony głównej", hu:"vissza a főoldalra", it:"torna alla pagina iniziale",
   fr:"retour à la page d'accueil", es:"volver a la página principal", uk:"на головну сторінку"
 };
 const FOOTER_LABEL = {
   sk:"Sprievodca Kostolom sv. Kataríny · Banská Štiavnica",
+  cs:"Průvodce Kostelem sv. Kateřiny · Banská Štiavnica",
   en:"Guide to St Catherine's Church · Banská Štiavnica",
   de:"Führer durch die Katharinenkirche · Banská Štiavnica",
   pl:"Przewodnik po kościele św. Katarzyny · Bańska Szczawnica",
@@ -86,12 +94,13 @@ const FOOTER_LABEL = {
 /* ---------- Úvodná stránka ---------- */
 const INDEX_I18N = {
   eyebrow: {
-    sk:"Vitajte", en:"Welcome", de:"Willkommen", pl:"Witamy", hu:"Üdvözöljük",
-    it:"Benvenuti", fr:"Bienvenue", es:"Bienvenidos", uk:"Вітаємо"
+    sk:"Vitajte", cs:"Vítejte", en:"Welcome", de:"Willkommen", pl:"Witamy",
+    hu:"Üdvözöljük", it:"Benvenuti", fr:"Bienvenue", es:"Bienvenidos", uk:"Вітаємо"
   },
   /* {rok} sa nahradí aktuálnym rokom — „1488 – dodnes“ sa tak nikdy nezastará. */
   heroSub: {
     sk:"Banská Štiavnica · 1488 – {rok}",
+    cs:"Banská Štiavnica · 1488 – {rok}",
     en:"Banská Štiavnica · 1488 – {rok}",
     de:"Banská Štiavnica · 1488 – {rok}",
     pl:"Bańska Szczawnica · 1488 – {rok}",
@@ -103,6 +112,7 @@ const INDEX_I18N = {
   },
   churchName: {
     sk:"Kostol sv. Kataríny Alexandrijskej",
+    cs:"Kostel sv. Kateřiny Alexandrijské",
     en:"Church of St Catherine of Alexandria",
     de:"Kirche der hl. Katharina von Alexandrien",
     pl:"Kościół św. Katarzyny Aleksandryjskiej",
@@ -114,6 +124,7 @@ const INDEX_I18N = {
   },
   intro: {
     sk:"Vitajte v Kostole svätej Kataríny Alexandrijskej v Banskej Štiavnici — neskorogotickom klenote z rokov 1488 – 1491, nazývanom aj „slovenský kostol“. Táto stránka vás prevedie interiérom kostola: pri každej zastávke v kostole nájdete QR kód, ktorý vás privedie k textu o danom mieste v jazyku podľa vlastného výberu. Prehliadku si však môžete prejsť aj priamo tu na stránke.",
+    cs:"Vítejte v Kostele svaté Kateřiny Alexandrijské v Banské Štiavnici — pozdně gotickém klenotu z let 1488 – 1491, nazývaném také „slovenský kostel“. Tato stránka vás provede interiérem kostela: u každé zastávky v kostele najdete QR kód, který vás přivede k textu o daném místě v jazyce podle vlastního výběru. Prohlídku si však můžete projít i přímo zde na stránce.",
     en:"Welcome to the Church of St Catherine of Alexandria in Banská Štiavnica — a late-Gothic jewel built in 1488–1491, also known as the “Slovak church”. This site guides you through the church interior: at each stop inside the church you will find a QR code leading to a text about that place in the language of your choice. You can also browse the whole tour right here.",
     de:"Willkommen in der Kirche der hl. Katharina von Alexandrien in Banská Štiavnica — einem spätgotischen Juwel aus den Jahren 1488–1491, auch „slowakische Kirche“ genannt. Diese Seite führt Sie durch das Innere der Kirche: An jeder Station finden Sie einen QR-Code, der Sie zu einem Text über den jeweiligen Ort in Ihrer Sprache führt. Sie können den Rundgang auch direkt hier durchblättern.",
     pl:"Witamy w kościele św. Katarzyny Aleksandryjskiej w Bańskiej Szczawnicy — późnogotyckim klejnocie z lat 1488–1491, zwanym też „słowackim kościołem”. Ta strona oprowadzi Cię po wnętrzu kościoła: przy każdym przystanku znajdziesz kod QR prowadzący do tekstu o danym miejscu w wybranym języku. Całą trasę możesz też przejrzeć bezpośrednio tutaj.",
@@ -124,21 +135,23 @@ const INDEX_I18N = {
     uk:"Вітаємо в церкві святої Катерини Александрійської в Банській Штявниці — пізньоготичній перлині 1488–1491 років, яку називають також «словацькою церквою». Цей сайт проведе вас інтер'єром церкви: біля кожної зупинки ви знайдете QR-код, що веде до тексту про це місце обраною вами мовою. Весь маршрут можна переглянути й просто тут."
   },
   stopsHeading: {
-    sk:"Zastávky prehliadky", en:"Tour stops", de:"Stationen des Rundgangs",
-    pl:"Przystanki trasy", hu:"A túra állomásai", it:"Tappe della visita",
-    fr:"Étapes de la visite", es:"Paradas del recorrido", uk:"Зупинки маршруту"
+    sk:"Zastávky prehliadky", cs:"Zastávky prohlídky", en:"Tour stops",
+    de:"Stationen des Rundgangs", pl:"Przystanki trasy", hu:"A túra állomásai",
+    it:"Tappe della visita", fr:"Étapes de la visite", es:"Paradas del recorrido",
+    uk:"Зупинки маршруту"
   },
   extrasHeading: {
-    sk:"Ďalšie čítanie", en:"Further reading", de:"Weiterführendes",
+    sk:"Ďalšie čítanie", cs:"Další čtení", en:"Further reading", de:"Weiterführendes",
     pl:"Więcej informacji", hu:"További olvasnivaló", it:"Approfondimenti",
     fr:"Pour aller plus loin", es:"Lecturas adicionales", uk:"Додаткові матеріали"
   },
   addressLabel: {
-    sk:"Adresa", en:"Address", de:"Adresse", pl:"Adres", hu:"Cím",
+    sk:"Adresa", cs:"Adresa", en:"Address", de:"Adresse", pl:"Adres", hu:"Cím",
     it:"Indirizzo", fr:"Adresse", es:"Dirección", uk:"Адреса"
   },
   addressValue: {
     sk:"Radničné námestie, 969 01 Banská Štiavnica, Slovensko",
+    cs:"Radničné námestie, 969 01 Banská Štiavnica, Slovensko",
     en:"Radničné námestie, 969 01 Banská Štiavnica, Slovakia",
     de:"Radničné námestie, 969 01 Banská Štiavnica, Slowakei",
     pl:"Radničné námestie, 969 01 Bańska Szczawnica, Słowacja",
@@ -149,9 +162,9 @@ const INDEX_I18N = {
     uk:"Radničné námestie, 969 01 Банська Штявниця, Словаччина"
   },
   hoursLabel: {
-    sk:"Otváracie hodiny", en:"Opening hours", de:"Öffnungszeiten", pl:"Godziny otwarcia",
-    hu:"Nyitvatartás", it:"Orari di apertura", fr:"Horaires d'ouverture",
-    es:"Horario de apertura", uk:"Години відвідування"
+    sk:"Otváracie hodiny", cs:"Otevírací doba", en:"Opening hours", de:"Öffnungszeiten",
+    pl:"Godziny otwarcia", hu:"Nyitvatartás", it:"Orari di apertura",
+    fr:"Horaires d'ouverture", es:"Horario de apertura", uk:"Години відвідування"
   },
   /* Otváracie hodiny — sezónny rozvrh.
      Každé obdobie má názov (season) a riadky s časmi (rows).
@@ -161,6 +174,11 @@ const INDEX_I18N = {
       { season:"Júl – august", rows:["Po – So · 9:00 – 17:00", "Nedeľa · 13:00 – 17:00"] },
       { season:"Jún a september", rows:["Sobota · 9:00 – 17:00", "Nedeľa · 13:00 – 17:00"] },
       { season:"Ostatné mesiace", rows:["Zatvorené"] }
+    ],
+    cs:[
+      { season:"Červenec – srpen", rows:["Po – So · 9:00 – 17:00", "Neděle · 13:00 – 17:00"] },
+      { season:"Červen a září", rows:["Sobota · 9:00 – 17:00", "Neděle · 13:00 – 17:00"] },
+      { season:"Ostatní měsíce", rows:["Zavřeno"] }
     ],
     en:[
       { season:"July – August", rows:["Mon – Sat · 9:00 – 17:00", "Sunday · 13:00 – 17:00"] },
@@ -204,12 +222,13 @@ const INDEX_I18N = {
     ]
   },
   contactLabel: {
-    sk:"Kontakt", en:"Contact", de:"Kontakt", pl:"Kontakt", hu:"Kapcsolat",
-    it:"Contatti", fr:"Contact", es:"Contacto", uk:"Контакти"
+    sk:"Kontakt", cs:"Kontakt", en:"Contact", de:"Kontakt", pl:"Kontakt",
+    hu:"Kapcsolat", it:"Contatti", fr:"Contact", es:"Contacto", uk:"Контакти"
   },
   /* TODO: doplňte telefón / e-mail farského úradu */
   contactValue: {
     sk:"Rímskokatolícka cirkev, farnosť Banská Štiavnica",
+    cs:"Římskokatolická církev, farnost Banská Štiavnica",
     en:"Roman Catholic parish of Banská Štiavnica",
     de:"Römisch-katholische Pfarrei Banská Štiavnica",
     pl:"Parafia rzymskokatolicka w Bańskiej Szczawnicy",

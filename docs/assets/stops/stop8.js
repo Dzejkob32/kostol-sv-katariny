@@ -2,6 +2,7 @@
 STOPS[8] = {
   title: {
     sk: "Kaplnka sv. Jána Nepomuckého",
+    cs: "Kaple sv. Jana Nepomuckého",
     en: "The Chapel of St John of Nepomuk",
     de: "Die Kapelle des hl. Johannes Nepomuk",
     pl: "Kaplica św. Jana Nepomucena",
@@ -16,6 +17,11 @@ STOPS[8] = {
       "V nasledujúcej kaplnke je umiestnený oltár svätého Jána Nepomuckého; vľavo od neho stojí svätý Anton Paduánsky a vpravo svätý Jozef s Ježiškom.",
       "Vo vitráži je v ľavej časti zobrazený svätý Juraj stojaci nad mŕtvym drakom a v pravej časti pravdepodobne kľačiaci svätý Ambróz, patrón včelárov. Vitráž daroval posledný banskoštiavnický medovnikár a voskár Juraj Velic.",
       "Na stene je umiestnený obraz Betlehema z konca 19. storočia."
+    ],
+    cs: [
+      "V následující kapli je umístěn oltář svatého Jana Nepomuckého; vlevo od něho stojí svatý Antonín Paduánský a vpravo svatý Josef s Ježíškem.",
+      "Ve vitráži je v levé části zobrazen svatý Jiří stojící nad mrtvým drakem a v pravé části pravděpodobně klečící svatý Ambrož, patron včelařů. Vitráž daroval poslední banskoštiavnický medovnikář a voskař Juraj Velic.",
+      "Na stěně je umístěn obraz Betléma z konce 19. století."
     ],
     en: [
       "The next chapel houses the altar of St John of Nepomuk; to his left stands St Anthony of Padua and to his right St Joseph with the infant Jesus.",

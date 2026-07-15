@@ -2,6 +2,7 @@
 STOPS[3] = {
   title: {
     sk: "Kaplnka Piety",
+    cs: "Kaple Piety",
     en: "The Chapel of the Pietà",
     de: "Die Pietà-Kapelle",
     pl: "Kaplica Piety",
@@ -15,6 +16,10 @@ STOPS[3] = {
     sk: [
       "V prvej kaplnke severnej strany sa nachádza oltár Piety — Panny Márie držiacej mŕtve telo Ježiša. Po jej stranách stoja dve sochy: vľavo pravdepodobne svätá Alžbeta Uhorská a vpravo svätá Mária Biblická.",
       "Na vitráži je zobrazená svätá Alžbeta Uhorská a svätý Imrich; venovali ju zamestnanci Tabakovej továrne v Banskej Štiavnici. Svätá Alžbeta Uhorská je zobrazená aj na obraze z 18. storočia."
+    ],
+    cs: [
+      "V první kapli severní strany se nachází oltář Piety — Panny Marie držící mrtvé tělo Ježíše. Po jejích stranách stojí dvě sochy: vlevo pravděpodobně svatá Alžběta Uherská a vpravo svatá Marie Biblická.",
+      "Na vitráži je zobrazena svatá Alžběta Uherská a svatý Imrich; věnovali ji zaměstnanci Tabákové továrny v Banské Štiavnici. Svatá Alžběta Uherská je zobrazena i na obraze z 18. století."
     ],
     en: [
       "The first chapel on the north side houses the altar of the Pietà — the Virgin Mary holding the dead body of Jesus. On either side stand two statues: on the left, probably St Elizabeth of Hungary, and on the right, St Mary of the Bible.",

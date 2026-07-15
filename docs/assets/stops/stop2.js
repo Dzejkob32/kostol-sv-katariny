@@ -2,6 +2,7 @@
 STOPS[2] = {
   title: {
     sk: "Severný vchod a gotický krucifix",
+    cs: "Severní vchod a gotický krucifix",
     en: "The North Entrance and the Gothic Crucifix",
     de: "Der Nordeingang und das gotische Kruzifix",
     pl: "Wejście północne i gotycki krucyfiks",
@@ -15,6 +16,10 @@ STOPS[2] = {
     sk: [
       "Nad severným vchodom do kostola je vitráž zobrazujúca svätého Jozefa, Ježiša s barančekom a svätého Jána Krstiteľa, ktorý drží palicu s nápisom „Ecce Agnus Dei“ — „Hľa, Baránok Boží“. Zhotovená bola z milodarov veriacich.",
       "Na stene vedľa dverí je umiestnená socha ukrižovaného Krista, ktorá sa datuje do polovice 90. rokov 15. storočia — je teda staršia ako samotný kostol."
+    ],
+    cs: [
+      "Nad severním vchodem do kostela je vitráž zobrazující svatého Josefa, Ježíše s beránkem a svatého Jana Křtitele, který drží hůl s nápisem „Ecce Agnus Dei“ — „Hle, Beránek Boží“. Zhotovena byla z milodarů věřících.",
+      "Na stěně vedle dveří je umístěna socha ukřižovaného Krista, která se datuje do poloviny 90. let 15. století — je tedy starší než samotný kostel."
     ],
     en: [
       "Above the north entrance to the church is a stained-glass window depicting St Joseph, Jesus with a lamb, and St John the Baptist holding a staff with the inscription “Ecce Agnus Dei” — “Behold, the Lamb of God”. It was made from the donations of the faithful.",

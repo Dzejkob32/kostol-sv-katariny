@@ -2,6 +2,7 @@
 STOPS[1] = {
   title: {
     sk: "História a architektúra kostola",
+    cs: "Historie a architektura kostela",
     en: "History and Architecture of the Church",
     de: "Geschichte und Architektur der Kirche",
     pl: "Historia i architektura kościoła",
@@ -20,6 +21,15 @@ STOPS[1] = {
       "Po stranách kostola je medzi opornými piliermi postavených päť bočných kaplniek, ktoré sú o polovicu nižšie ako samotný kostol. Každá kaplnka je zaklenutá iným druhom sieťovej klenby a aj kamenárska výzdoba okien je v každej kaplnke iná. Bočné kaplnky slúžili na súkromné bohoslužby; dnes sa v nich nachádzajú neogotické oltáre z 19. storočia. Vitráže v kaplnkách sú z roku 1907 a farebné okná presbytéria z roku 1894.",
       "V kostole sa tak prelínajú prvky neskorej gotiky — sieťová klenba a lomené oblúky okien — s prvkami nastupujúcej renesancie, ktorá sa prejavila absenciou víťazného oblúka. Ide o ojedinelý typ sakrálnej stavby na Slovensku. Kostol sa nazýva aj „slovenský kostol“: od roku 1658 sa v ňom kázalo po slovensky, hoci v meste žilo početné nemecké obyvateľstvo.",
       "Po stranách kostola sú na stenách umiestnené dve sochy. Na ľavej strane je neskorogotická socha Madony z roku 1506 — drevorezba z lipového dreva vyrezaná do elipsy, typ Panny Márie Nanebovzatej nesenej anjelmi do neba. Jej autorom je majster s iniciálami M. S., ktorý je dodnes zahalený rúškom tajomstva; odborníci ho zaraďujú medzi vrcholné postavy neskorogotického umenia v Európe. Vytvoril aj sochy svätej Kataríny a svätej Barbory, ktoré sú dnes v Galérii Jozefa Kollára v Banskej Štiavnici. Na pravej strane je súsošie svätej Anny s malou Pannou Máriou od tirolského rezbára z 19. storočia."
+    ],
+    cs: [
+      "Tento kostel byl postaven z kamene na nezastavěné ploše v samém centru města u radnice v letech 1488 – 1491 a vnitřní výzdoba byla dokončena v roce 1500. Vysvěcen byl 16. listopadu 1500 ostřihomským biskupem Řehořem. Svědčí o tom 12 konsekračních křížů na stěnách kostela — konsekrační kříž označuje místo, které biskup při svěcení kostela poznamenal křižmem.",
+      "Pod kostelem je krypta, do níž se v minulosti pohřbívali významní obyvatelé města; v současnosti je již nepřístupná, vchod byl zazděn.",
+      "Z východní strany byla ke kostelu v roce 1776 přistavěna vnější kaple svatého Jana Nepomuckého.",
+      "Kostel je jednolodní, s pozdně gotickou síťovo-hvězdicovou klenbou, která plynule, bez vítězného oblouku, přechází z lodi kostela do presbytáře. Žebra klenby jsou zakončena umělecky vzácnými figurálními konzolami. Směrem od hlavního oltáře znázorňují nejprve anděly, kteří nesou znaky Ježíšova umučení (kříž, hřeb, Ježíšovu tvář na plátně…); potom je oddělují světice — svatá Kateřina s mečem a svatá Barbora s věží — a zbývající konzoly směrem na západ zobrazují významné lidi, kteří se zasloužili o stavbu kostela: mistra huti, architekta či kazatele.",
+      "Po stranách kostela je mezi opěrnými pilíři postaveno pět bočních kaplí, které jsou o polovinu nižší než samotný kostel. Každá kaple je zaklenuta jiným druhem síťové klenby a také kamenická výzdoba oken je v každé kapli jiná. Boční kaple sloužily k soukromým bohoslužbám; dnes se v nich nacházejí novogotické oltáře z 19. století. Vitráže v kaplích jsou z roku 1907 a barevná okna presbytáře z roku 1894.",
+      "V kostele se tak prolínají prvky pozdní gotiky — síťová klenba a lomené oblouky oken — s prvky nastupující renesance, která se projevila absencí vítězného oblouku. Jde o ojedinělý typ sakrální stavby na Slovensku. Kostel se nazývá také „slovenský kostel“: od roku 1658 se v něm kázalo slovensky, ačkoli ve městě žilo početné německé obyvatelstvo.",
+      "Po stranách kostela jsou na stěnách umístěny dvě sochy. Na levé straně je pozdně gotická socha Madony z roku 1506 — dřevořezba z lipového dřeva vyřezaná do elipsy, typ Panny Marie Nanebevzaté nesené anděly do nebe. Jejím autorem je mistr s iniciálami M. S., který je dodnes zahalen rouškou tajemství; odborníci ho řadí mezi vrcholné postavy pozdně gotického umění v Evropě. Vytvořil i sochy svaté Kateřiny a svaté Barbory, které jsou dnes v Galerii Jozefa Kollára v Banské Štiavnici. Na pravé straně je sousoší svaté Anny s malou Pannou Marií od tyrolského řezbáře z 19. století."
     ],
     en: [
       "This stone church was built on an open plot in the very centre of the town, next to the town hall, between 1488 and 1491, and its interior decoration was completed in 1500. It was consecrated on 16 November 1500 by Gregory, Bishop of Esztergom. This is attested by the 12 consecration crosses on the church walls — a consecration cross marks the spot anointed with chrism by the bishop during the consecration ceremony.",

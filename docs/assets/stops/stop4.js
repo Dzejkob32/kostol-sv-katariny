@@ -2,6 +2,7 @@
 STOPS[4] = {
   title: {
     sk: "Kaplnka sv. Jána Evanjelistu",
+    cs: "Kaple sv. Jana Evangelisty",
     en: "The Chapel of St John the Evangelist",
     de: "Die Kapelle des hl. Johannes des Evangelisten",
     pl: "Kaplica św. Jana Ewangelisty",
@@ -16,6 +17,11 @@ STOPS[4] = {
       "V ďalšej kaplnke severnej strany sa nachádza oltár svätého Jána Evanjelistu. Po stranách ho sprevádzajú dvaja svätci — vľavo svätý Alojz Gonzaga a vpravo svätý Hieronym.",
       "Vitráž zobrazuje zjavenie Panny Márie s Ježiškom svätému Dominikovi. Panna Mária ho podľa tradície naučila modliť sa ruženec — na vitráži mu ruženec podáva — a vďaka tomu sa potom obrátilo mnoho ľudí. Ruženec sa tak stal dedičstvom rádu dominikánov. Vitráž daroval Ružencový spolok v Banskej Štiavnici.",
       "V tejto kaplnke sa nachádza aj obraz Zvestovania Panne Márii z 19. storočia."
+    ],
+    cs: [
+      "V další kapli severní strany se nachází oltář svatého Jana Evangelisty. Po stranách ho doprovázejí dva světci — vlevo svatý Alois Gonzaga a vpravo svatý Jeroným.",
+      "Vitráž zobrazuje zjevení Panny Marie s Ježíškem svatému Dominikovi. Panna Maria ho podle tradice naučila modlit se růženec — na vitráži mu růženec podává — a díky tomu se pak obrátilo mnoho lidí. Růženec se tak stal dědictvím řádu dominikánů. Vitráž daroval Růžencový spolek v Banské Štiavnici.",
+      "V této kapli se nachází i obraz Zvěstování Panně Marii z 19. století."
     ],
     en: [
       "The next chapel on the north side houses the altar of St John the Evangelist. He is flanked by two saints — St Aloysius Gonzaga on the left and St Jerome on the right.",

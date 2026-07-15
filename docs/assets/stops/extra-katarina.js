@@ -1,11 +1,12 @@
 /* Dodatok — svätá Katarína Alexandrijská, patrónka kostola */
 STOPS["katarina"] = {
   eyebrow: {
-    sk:"Dodatok", en:"Appendix", de:"Anhang", pl:"Dodatek", hu:"Függelék",
-    it:"Appendice", fr:"Annexe", es:"Apéndice", uk:"Додаток"
+    sk:"Dodatok", cs:"Dodatek", en:"Appendix", de:"Anhang", pl:"Dodatek",
+    hu:"Függelék", it:"Appendice", fr:"Annexe", es:"Apéndice", uk:"Додаток"
   },
   title: {
     sk: "Svätá Katarína Alexandrijská",
+    cs: "Svatá Kateřina Alexandrijská",
     en: "St Catherine of Alexandria",
     de: "Die hl. Katharina von Alexandrien",
     pl: "Św. Katarzyna Aleksandryjska",
@@ -21,6 +22,12 @@ STOPS["katarina"] = {
       "Narodila sa pravdepodobne v Alexandrii v 3. storočí v šľachtickej rodine a zomrela okolo roku 312. Bola krásna, bohatá a vzdelaná, ale veľmi pyšná, kvôli čomu odmietala každého nápadníka. Jedného dňa sa stretla so starým pustovníkom, ktorý jej povedal, že najlepším ženíchom je Ježiš. Nato sa dala pokrstiť.",
       "Raz sa Katarína zúčastnila na konaní obiet ku cti pohanských bohov a vysvetľovala cisárovi, že pohanskí bohovia sú len modly. Cisár zvolal 50 najlepších filozofov, no Katarína na verejnej rozprave svoju kresťanskú vieru obhájila. Kritizovala tiež miestodržiteľa Maxencia za to, že prenasledoval kresťanov. Ten dal upáliť päťdesiatich z tých, ktorí sa vďaka nej obrátili, a potom sa obrátil aj proti nej: ponúkol jej kráľovský sobáš, ak sa vzdá viery. Katarína odmietla, a preto ju uväznil.",
       "Vo väzení sa jej podarilo obrátiť Maxenciovu ženu a dvesto vojakov — všetkých dal Maxencius popraviť. Katarínu priviazal na koleso vybité klincami a vláčil ju. Keď sa koleso rozpadlo, odťal jej hlavu. Preto sa svätá Katarína znázorňuje s kolesom alebo s mečom v ruke."
+    ],
+    cs: [
+      "Svatá Kateřina Alexandrijská, panna a mučednice (z řeckého kataros = čistý), má v liturgickém kalendáři svátek 25. listopadu. Je patronkou filozofů a kazatelů, jakož i učitelů, studentů a žáků i teologů.",
+      "Narodila se pravděpodobně v Alexandrii ve 3. století ve šlechtické rodině a zemřela kolem roku 312. Byla krásná, bohatá a vzdělaná, ale velmi pyšná, kvůli čemuž odmítala každého nápadníka. Jednoho dne se setkala se starým poustevníkem, který jí řekl, že nejlepším ženichem je Ježíš. Nato se dala pokřtít.",
+      "Jednou se Kateřina zúčastnila obětí ke cti pohanských bohů a vysvětlovala císaři, že pohanští bohové jsou jen modly. Císař svolal 50 nejlepších filozofů, ale Kateřina na veřejné rozpravě svou křesťanskou víru obhájila. Kritizovala také místodržitele Maxentia za to, že pronásledoval křesťany. Ten dal upálit padesát z těch, kteří se díky ní obrátili, a potom se obrátil i proti ní: nabídl jí královský sňatek, pokud se vzdá víry. Kateřina odmítla, a proto ji uvěznil.",
+      "Ve vězení se jí podařilo obrátit Maxentiovu ženu a dvě stě vojáků — všechny dal Maxentius popravit. Kateřinu přivázal na kolo vybité hřeby a vláčel ji. Když se kolo rozpadlo, sťal jí hlavu. Proto se svatá Kateřina znázorňuje s kolem nebo s mečem v ruce."
     ],
     en: [
       "St Catherine of Alexandria, virgin and martyr (from the Greek kataros = pure), is commemorated in the liturgical calendar on 25 November. She is the patron saint of philosophers and preachers, as well as of teachers, students and pupils, and theologians.",

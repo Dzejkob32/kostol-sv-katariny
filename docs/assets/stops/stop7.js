@@ -2,6 +2,7 @@
 STOPS[7] = {
   title: {
     sk: "Kaplnka sv. Ignáca z Loyoly",
+    cs: "Kaple sv. Ignáce z Loyoly",
     en: "The Chapel of St Ignatius of Loyola",
     de: "Die Kapelle des hl. Ignatius von Loyola",
     pl: "Kaplica św. Ignacego Loyoli",
@@ -16,6 +17,11 @@ STOPS[7] = {
       "V prvej kaplnke južnej strany kostola sa nachádza oltár svätého Ignáca z Loyoly, ktorý v ľavej ruke drží otvorenú knihu s nápisom Ad Maiorem Dei Gloriam — Na väčšiu Božiu slávu.",
       "Na vitráži je zobrazené Zvestovanie Panne Márii: Panna Mária kľačí v pravej časti, vľavo od nej stojí archanjel Gabriel s nápisom „Ave Maria Gratia“ a v hornej časti pôsobí na Pannu Máriu Duch Svätý v podobe holubice. Vitráž daroval štiavnicko-rovniansky sociálny a pohrebnícky spolok.",
       "V kaplnke je ešte umiestnená socha svätého Antona Paduánskeho z 19. storočia a slávny obraz Narodenia od Antona Schmidta z 18. storočia."
+    ],
+    cs: [
+      "V první kapli jižní strany kostela se nachází oltář svatého Ignáce z Loyoly, který v levé ruce drží otevřenou knihu s nápisem Ad Maiorem Dei Gloriam — K větší slávě Boží.",
+      "Na vitráži je zobrazeno Zvěstování Panně Marii: Panna Maria klečí v pravé části, vlevo od ní stojí archanděl Gabriel s nápisem „Ave Maria Gratia“ a v horní části působí na Pannu Marii Duch Svatý v podobě holubice. Vitráž daroval štiavnicko-rovniansky sociální a pohřebnický spolek.",
+      "V kapli je ještě umístěna socha svatého Antonína Paduánského z 19. století a slavný obraz Narození od Antona Schmidta z 18. století."
     ],
     en: [
       "The first chapel on the south side of the church houses the altar of St Ignatius of Loyola, who holds in his left hand an open book with the inscription Ad Maiorem Dei Gloriam — For the Greater Glory of God.",
