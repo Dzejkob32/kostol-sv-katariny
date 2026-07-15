@@ -3,40 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zastávka 6 · Sprievodca kostolom</title>
+<title>Zastavka 6</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <div class="page">
 
+  <div class="prog-top" id="progTop">
+    <div class="prog-labels">
+      <span class="prog-group" id="progGroup"></span>
+      <span id="progCount"></span>
+    </div>
+    <div class="prog-track"><span id="progBar"></span></div>
+  </div>
+
   <div class="seal-row">
-    <div class="seal" id="stopNumber">6</div>
+    <svg class="arch" width="52" height="63" viewBox="0 0 100 120" aria-hidden="true">
+      <path class="arch-fill" d="M8 118 L8 58 C8 24 28 6 50 3 C72 6 92 24 92 58 L92 118 Z"/>
+      <text class="arch-num" id="stopNumber" x="50" y="80">6</text>
+    </svg>
     <div>
       <p class="eyebrow" id="eyebrow">Zastávka</p>
       <h1 id="title"></h1>
     </div>
   </div>
 
-  <div class="langs">
-    <span class="langs-label" id="langsLabel">Jazyk</span>
-    <select class="lang-select" id="langSwitcher"></select>
-  </div>
+  <div class="chips" id="langSwitcher"></div>
 
   <div class="text-panel">
     <div id="bodyText"></div>
   </div>
 
-  <div class="divider"></div>
+  <div class="orn"><i></i><b>&#10022;</b><i></i></div>
 
   <div class="stop-nav" id="stopNav"></div>
   <span class="nav-hint" id="navHint"></span>
 
-  <footer><span id="footerLabel">Sprievodca kostolom</span> · <a href="../" style="color:inherit;" id="backHome">späť na úvodnú stránku</a></footer>
+  <footer><span id="footerLabel">Sprievodca kostolom</span> &middot; <a href="../" id="backHome">sp&#228;t&#780; na &#250;vodn&#250; str&#225;nku</a></footer>
 </div>
 
 <script>window.STOP_ID = 6;</script>
 <script src="../assets/tour-data.js"></script>
+<script src="../assets/stops/stop5.js"></script>
 <script src="../assets/stops/stop6.js"></script>
+<script src="../assets/stops/stop7.js"></script>
 <script src="../assets/tour-render.js"></script>
 </body>
 </html>

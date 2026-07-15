@@ -3,3 +3,7 @@
 
 # Lokálne nastavenia nástrojov
 .claude/
+
+# Interné návrhy — len na prezeranie, nepatria na web
+navrh-vylepseni.html
+navrh-dizajn.html

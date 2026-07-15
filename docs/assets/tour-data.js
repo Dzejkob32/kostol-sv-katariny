@@ -13,13 +13,47 @@ const LANG_LABELS = {
   sk:"Slovenčina", en:"English", de:"Deutsch", pl:"Polski", hu:"Magyar",
   it:"Italiano", fr:"Français", es:"Español", uk:"Українська"
 };
+/* Vlajky a skratky pre prepínač jazykov (chips) */
+const LANG_FLAGS = {
+  sk:"🇸🇰", en:"🇬🇧", de:"🇩🇪", pl:"🇵🇱", hu:"🇭🇺",
+  it:"🇮🇹", fr:"🇫🇷", es:"🇪🇸", uk:"🇺🇦"
+};
+const LANG_SHORT = {
+  sk:"SK", en:"EN", de:"DE", pl:"PL", hu:"HU",
+  it:"IT", fr:"FR", es:"ES", uk:"UK"
+};
 const EYEBROW = {
   sk:"Zastávka", en:"Stop", de:"Station", pl:"Przystanek", hu:"Állomás",
   it:"Tappa", fr:"Étape", es:"Parada", uk:"Зупинка"
 };
-const LANGS_LABEL = {
-  sk:"Jazyk", en:"Language", de:"Sprache", pl:"Język", hu:"Nyelv",
-  it:"Lingua", fr:"Langue", es:"Idioma", uk:"Мова"
+
+/* Zoskupenie zastávok podľa častí kostola — poradie zodpovedá trase prehliadky. */
+const GROUPS = [
+  { stops:[1,2], label:{
+    sk:"Loď kostola", en:"The Nave", de:"Das Kirchenschiff", pl:"Nawa kościoła",
+    hu:"A templomhajó", it:"La navata", fr:"La nef", es:"La nave", uk:"Нава церкви" } },
+  { stops:[3,4,5], label:{
+    sk:"Severná strana", en:"North Side", de:"Nordseite", pl:"Strona północna",
+    hu:"Északi oldal", it:"Lato nord", fr:"Côté nord", es:"Lado norte", uk:"Північний бік" } },
+  { stops:[6], label:{
+    sk:"Presbytérium", en:"The Presbytery", de:"Der Chorraum", pl:"Prezbiterium",
+    hu:"A szentély", it:"Il presbiterio", fr:"Le chœur", es:"El presbiterio", uk:"Пресвітерій" } },
+  { stops:[7,8,9], label:{
+    sk:"Južná strana", en:"South Side", de:"Südseite", pl:"Strona południowa",
+    hu:"Déli oldal", it:"Lato sud", fr:"Côté sud", es:"Lado sur", uk:"Південний бік" } },
+  { stops:[10,11], label:{
+    sk:"Západná časť", en:"West End", de:"Westteil", pl:"Część zachodnia",
+    hu:"Nyugati rész", it:"Parte occidentale", fr:"Partie ouest", es:"Parte occidental",
+    uk:"Західна частина" } }
+];
+
+const NAV_PREV = {
+  sk:"Predchádzajúca", en:"Previous", de:"Vorherige", pl:"Poprzednia", hu:"Előző",
+  it:"Precedente", fr:"Précédente", es:"Anterior", uk:"Попередня"
+};
+const NAV_NEXT = {
+  sk:"Ďalšia", en:"Next", de:"Nächste", pl:"Następna", hu:"Következő",
+  it:"Successiva", fr:"Suivante", es:"Siguiente", uk:"Наступна"
 };
 const NAV_HINT = {
   sk:"Naskenujte ďalší QR kód pri postupe po trase, alebo použite šípky.",
@@ -54,6 +88,17 @@ const INDEX_I18N = {
   eyebrow: {
     sk:"Vitajte", en:"Welcome", de:"Willkommen", pl:"Witamy", hu:"Üdvözöljük",
     it:"Benvenuti", fr:"Bienvenue", es:"Bienvenidos", uk:"Вітаємо"
+  },
+  heroSub: {
+    sk:"Banská Štiavnica · 1488 – 1500",
+    en:"Banská Štiavnica · 1488 – 1500",
+    de:"Banská Štiavnica · 1488 – 1500",
+    pl:"Bańska Szczawnica · 1488 – 1500",
+    hu:"Selmecbánya · 1488 – 1500",
+    it:"Banská Štiavnica · 1488 – 1500",
+    fr:"Banská Štiavnica · 1488 – 1500",
+    es:"Banská Štiavnica · 1488 – 1500",
+    uk:"Банська Штявниця · 1488 – 1500"
   },
   churchName: {
     sk:"Kostol sv. Kataríny Alexandrijskej",

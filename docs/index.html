@@ -10,44 +10,53 @@
 <body>
 <div class="page">
 
-  <div class="seal-row">
-    <div class="seal">⛪</div>
-    <div>
-      <p class="eyebrow" id="eyebrow">Vitajte</p>
-      <h1 id="title">Kostol sv. Kataríny Alexandrijskej</h1>
-    </div>
+  <div class="hero">
+    <svg class="arch" width="68" height="82" viewBox="0 0 100 120" aria-hidden="true">
+      <path class="arch-fill" d="M8 118 L8 58 C8 24 28 6 50 3 C72 6 92 24 92 58 L92 118 Z"/>
+      <path class="arch-inner" d="M16 112 L16 59 C16 30 32 14 50 11 C68 14 84 30 84 59 L84 112 Z"/>
+      <text class="arch-emoji" x="50" y="78">⛪</text>
+    </svg>
+    <p class="eyebrow" id="eyebrow">Vitajte</p>
+    <h1 id="title">Kostol sv. Kataríny Alexandrijskej</h1>
+    <p class="hero-sub" id="heroSub">Banská Štiavnica · 1488 – 1500</p>
   </div>
 
-  <div class="langs">
-    <span class="langs-label" id="langsLabel">Jazyk</span>
-    <select class="lang-select" id="langSwitcher"></select>
-  </div>
+  <div class="chips" id="langSwitcher"></div>
 
-  <div class="text-panel" style="margin-bottom:22px;">
+  <div class="text-panel" style="margin-bottom:14px;">
     <p class="dropcap" id="intro"></p>
   </div>
 
-  <div class="info-grid">
-    <div class="info-card">
-      <p class="label" id="addressLabel">Adresa</p>
-      <p id="addressValue"></p>
+  <div class="info-panel">
+    <div class="info-row">
+      <div class="info-ic">📍</div>
+      <div>
+        <p class="label" id="addressLabel">Adresa</p>
+        <p id="addressValue"></p>
+      </div>
     </div>
-    <div class="info-card">
-      <p class="label" id="hoursLabel">Otváracie hodiny</p>
-      <p id="hoursValue"></p>
+    <div class="info-row">
+      <div class="info-ic">🕘</div>
+      <div>
+        <p class="label" id="hoursLabel">Otváracie hodiny</p>
+        <div id="hoursValue"></div>
+      </div>
     </div>
-    <div class="info-card">
-      <p class="label" id="contactLabel">Kontakt</p>
-      <p id="contactValue"></p>
+    <div class="info-row">
+      <div class="info-ic">✉</div>
+      <div>
+        <p class="label" id="contactLabel">Kontakt</p>
+        <p id="contactValue"></p>
+      </div>
     </div>
   </div>
 
-  <div class="divider"></div>
+  <div class="orn"><i></i><b>✦</b><i></i></div>
 
-  <p class="eyebrow" style="margin-bottom:10px;" id="stopsHeading">Zastávky prehliadky</p>
-  <ul class="stop-list" id="stopList"></ul>
+  <p class="eyebrow" style="margin-bottom:12px;" id="stopsHeading">Zastávky prehliadky</p>
+  <div id="groups"></div>
 
-  <p class="eyebrow" style="margin:26px 0 10px;" id="extrasHeading">Ďalšie čítanie</p>
+  <p class="eyebrow" style="margin:24px 0 8px;" id="extrasHeading">Ďalšie čítanie</p>
   <ul class="stop-list" id="extraList"></ul>
 
   <footer><span id="footerLabel">Sprievodca kostolom</span></footer>
