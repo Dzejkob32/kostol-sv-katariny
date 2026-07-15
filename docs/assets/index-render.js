@@ -14,7 +14,8 @@ function render(){
 
   document.getElementById("eyebrow").textContent = t("eyebrow");
   document.getElementById("title").textContent = t("churchName");
-  document.getElementById("heroSub").textContent = t("heroSub");
+  document.getElementById("heroSub").textContent =
+    t("heroSub").replace("{rok}", new Date().getFullYear());
   document.title = t("churchName") + " · Banská Štiavnica";
   document.getElementById("intro").textContent = t("intro");
   document.getElementById("addressLabel").textContent = t("addressLabel");

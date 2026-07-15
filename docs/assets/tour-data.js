@@ -89,16 +89,17 @@ const INDEX_I18N = {
     sk:"Vitajte", en:"Welcome", de:"Willkommen", pl:"Witamy", hu:"Üdvözöljük",
     it:"Benvenuti", fr:"Bienvenue", es:"Bienvenidos", uk:"Вітаємо"
   },
+  /* {rok} sa nahradí aktuálnym rokom — „1488 – dodnes“ sa tak nikdy nezastará. */
   heroSub: {
-    sk:"Banská Štiavnica · 1488 – 1500",
-    en:"Banská Štiavnica · 1488 – 1500",
-    de:"Banská Štiavnica · 1488 – 1500",
-    pl:"Bańska Szczawnica · 1488 – 1500",
-    hu:"Selmecbánya · 1488 – 1500",
-    it:"Banská Štiavnica · 1488 – 1500",
-    fr:"Banská Štiavnica · 1488 – 1500",
-    es:"Banská Štiavnica · 1488 – 1500",
-    uk:"Банська Штявниця · 1488 – 1500"
+    sk:"Banská Štiavnica · 1488 – {rok}",
+    en:"Banská Štiavnica · 1488 – {rok}",
+    de:"Banská Štiavnica · 1488 – {rok}",
+    pl:"Bańska Szczawnica · 1488 – {rok}",
+    hu:"Selmecbánya · 1488 – {rok}",
+    it:"Banská Štiavnica · 1488 – {rok}",
+    fr:"Banská Štiavnica · 1488 – {rok}",
+    es:"Banská Štiavnica · 1488 – {rok}",
+    uk:"Банська Штявниця · 1488 – {rok}"
   },
   churchName: {
     sk:"Kostol sv. Kataríny Alexandrijskej",
