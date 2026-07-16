@@ -23,42 +23,47 @@
 
   <div class="chips" id="langSwitcher"></div>
 
-  <div class="text-panel" style="margin-bottom:14px;">
-    <p class="dropcap" id="intro"></p>
-  </div>
+  <!-- .home-split: na mobile display:contents (neviditeľný obal, poradie sa nemení),
+       na počítači dvojstĺpec — a hlavne obmedzuje pohyb „sticky“ plánu len na túto
+       hornú časť, aby pri scrollovaní nezakryl sekciu zastávok. -->
+  <div class="home-split">
+    <div class="text-panel" style="margin-bottom:14px;">
+      <p class="dropcap" id="intro"></p>
+    </div>
 
-  <div class="info-panel">
-    <div class="info-row">
-      <div class="info-ic">📍</div>
-      <div>
-        <p class="label" id="addressLabel">Adresa</p>
-        <p id="addressValue"></p>
+    <div class="info-panel">
+      <div class="info-row">
+        <div class="info-ic">📍</div>
+        <div>
+          <p class="label" id="addressLabel">Adresa</p>
+          <p id="addressValue"></p>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-ic">🕘</div>
+        <div>
+          <p class="label" id="hoursLabel">Otváracie hodiny</p>
+          <div id="hoursValue"></div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-ic">✉</div>
+        <div>
+          <p class="label" id="contactLabel">Kontakt</p>
+          <p id="contactValue"></p>
+        </div>
       </div>
     </div>
-    <div class="info-row">
-      <div class="info-ic">🕘</div>
-      <div>
-        <p class="label" id="hoursLabel">Otváracie hodiny</p>
-        <div id="hoursValue"></div>
-      </div>
+
+    <div class="orn"><i></i><b>✦</b><i></i></div>
+
+    <div class="plan-box full" id="planBox">
+      <p class="plan-title" id="planTitle">Plán kostola</p>
+      <div id="planHolder"></div>
     </div>
-    <div class="info-row">
-      <div class="info-ic">✉</div>
-      <div>
-        <p class="label" id="contactLabel">Kontakt</p>
-        <p id="contactValue"></p>
-      </div>
-    </div>
+
+    <div class="orn"><i></i><b>✦</b><i></i></div>
   </div>
-
-  <div class="orn"><i></i><b>✦</b><i></i></div>
-
-  <div class="plan-box full" id="planBox">
-    <p class="plan-title" id="planTitle">Plán kostola</p>
-    <div id="planHolder"></div>
-  </div>
-
-  <div class="orn"><i></i><b>✦</b><i></i></div>
 
   <p class="eyebrow" style="margin-bottom:12px;" id="stopsHeading">Zastávky prehliadky</p>
   <div id="groups"></div>

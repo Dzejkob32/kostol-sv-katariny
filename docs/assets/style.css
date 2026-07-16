@@ -32,6 +32,11 @@ body{
 
 .page{ width:100%; max-width:640px; }
 
+/* Obal hornej časti úvodnej stránky. Na mobile je „priehľadný“ (nevytvára box),
+   takže poradie a rozostupy ostávajú presne ako bez neho; na počítači sa z neho
+   stáva dvojstĺpec (viď media query nižšie). */
+.home-split{ display:contents; }
+
 /* ---------- gotický oblúk (motív klenby a okien kostola) ---------- */
 .arch{ flex:0 0 auto; display:block; }
 .arch-fill{ fill: var(--parchment-dark); stroke: var(--gold); stroke-width:3; }
@@ -257,38 +262,36 @@ footer a{ color:inherit; }
   .page{ max-width:1080px; }
 
   /* -------- úvodná stránka -------- */
-  .page-home{
+  .page-home > .hero{ padding-top:14px; }
+  .page-home > #langSwitcher{ justify-content:center; margin-bottom:28px; }
+
+  /* Horná časť ako dvojstĺpec. Sticky plán je obmedzený na .home-split,
+     takže pri scrollovaní nezájde nad sekciu zastávok (nezakryje zastávku 6). */
+  .home-split{
     display:grid;
     grid-template-columns:1fr 360px;
-    column-gap:42px; row-gap:0; align-items:start;
+    column-gap:42px; align-items:start;
     grid-template-areas:
-      "hero    hero"
-      "chips   chips"
-      "intro   plan"
-      "info    plan"
-      "heading heading"
-      "groups  groups"
-      "exH     exH"
-      "exList  exList"
-      "foot    foot";
+      "intro plan"
+      "info  plan";
   }
-  .page-home > .hero{ grid-area:hero; padding-top:14px; }
-  .page-home > #langSwitcher{ grid-area:chips; justify-content:center; margin-bottom:28px; }
-  .page-home > .text-panel{ grid-area:intro; margin-bottom:0 !important; }
-  .page-home > .info-panel{ grid-area:info; margin-top:16px; }
-  .page-home > .orn{ display:none; }
-  .page-home > #planBox{ grid-area:plan; position:sticky; top:24px; }
-  .page-home > #stopsHeading{ grid-area:heading; margin-top:36px; }
+  .home-split > .text-panel{ grid-area:intro; margin-bottom:0 !important; }
+  .home-split > .info-panel{ grid-area:info; margin-top:16px; }
+  .home-split > .orn{ display:none; }
+  /* Plán sa na úvode neposúva samostatne — je bežnou súčasťou hornej časti,
+     takže skončí pred zoznamom zastávok a nikdy ho neprekryje. */
+  .home-split > #planBox{ grid-area:plan; align-self:start; }
+
+  .page-home > #stopsHeading{ margin-top:36px; }
   .page-home > #groups{
-    grid-area:groups; display:grid; grid-template-columns:repeat(3,1fr);
+    display:grid; grid-template-columns:repeat(3,1fr);
     column-gap:24px; row-gap:4px; align-items:start;
   }
-  .page-home > #extrasHeading{ grid-area:exH; margin-top:28px; }
+  .page-home > #extrasHeading{ margin-top:28px; }
   .page-home > #extraList{
-    grid-area:exList; display:grid; grid-template-columns:repeat(3,1fr);
+    display:grid; grid-template-columns:repeat(3,1fr);
     column-gap:24px; row-gap:6px; align-items:start;
   }
-  .page-home > footer{ grid-area:foot; }
   /* na úvode je plán vysoký — hodiny pod sebou zaplnia ľavý stĺpec */
   .page-home .info-row p{ font-size:15px; }
 
