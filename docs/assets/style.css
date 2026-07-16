@@ -245,3 +245,80 @@ footer a{ color:inherit; }
   .stop-nav > span:last-child{ justify-content:stretch; }
   .stop-nav span:last-child a{ text-align:left; }
 }
+
+/* ============================================================
+   POČÍTAČOVÁ VERZIA (≥ 900 px)
+   Všetko je v tomto media query — pod 900 px ostáva mobilná
+   verzia úplne nedotknutá. Rozloženie sa skladá cez CSS grid,
+   takže netreba meniť HTML ani poradie prvkov.
+   ============================================================ */
+@media (min-width:900px){
+  body{ padding:38px 24px 72px; }
+  .page{ max-width:1080px; }
+
+  /* -------- úvodná stránka -------- */
+  .page-home{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    column-gap:42px; row-gap:0; align-items:start;
+    grid-template-areas:
+      "hero    hero"
+      "chips   chips"
+      "intro   plan"
+      "info    plan"
+      "heading heading"
+      "groups  groups"
+      "exH     exH"
+      "exList  exList"
+      "foot    foot";
+  }
+  .page-home > .hero{ grid-area:hero; padding-top:14px; }
+  .page-home > #langSwitcher{ grid-area:chips; justify-content:center; margin-bottom:28px; }
+  .page-home > .text-panel{ grid-area:intro; margin-bottom:0 !important; }
+  .page-home > .info-panel{ grid-area:info; margin-top:16px; }
+  .page-home > .orn{ display:none; }
+  .page-home > #planBox{ grid-area:plan; position:sticky; top:24px; }
+  .page-home > #stopsHeading{ grid-area:heading; margin-top:36px; }
+  .page-home > #groups{
+    grid-area:groups; display:grid; grid-template-columns:repeat(3,1fr);
+    column-gap:24px; row-gap:4px; align-items:start;
+  }
+  .page-home > #extrasHeading{ grid-area:exH; margin-top:28px; }
+  .page-home > #extraList{
+    grid-area:exList; display:grid; grid-template-columns:repeat(3,1fr);
+    column-gap:24px; row-gap:6px; align-items:start;
+  }
+  .page-home > footer{ grid-area:foot; }
+  /* na úvode je plán vysoký — hodiny pod sebou zaplnia ľavý stĺpec */
+  .page-home .info-row p{ font-size:15px; }
+
+  /* -------- stránka zastávky -------- */
+  .page-stop{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    column-gap:44px; row-gap:0; align-items:start;
+    grid-template-areas:
+      "aside prog"
+      "aside head"
+      "aside chips"
+      "aside text"
+      "aside orn"
+      "aside nav"
+      "aside hint"
+      "foot  foot";
+  }
+  .page-stop > #planBox{ grid-area:aside; position:sticky; top:24px; margin-bottom:0; }
+  .page-stop > .prog-top{ grid-area:prog; }
+  .page-stop > .seal-row{ grid-area:head; }
+  .page-stop > #langSwitcher{ grid-area:chips; }
+  .page-stop > .text-panel{ grid-area:text; }
+  .page-stop > .orn{ grid-area:orn; }
+  .page-stop > .stop-nav{ grid-area:nav; }
+  .page-stop > .nav-hint{ grid-area:hint; }
+  .page-stop > footer{ grid-area:foot; margin-top:30px; }
+  /* v bočnom paneli nech plán vyplní stĺpec */
+  .page-stop #planBox .plan-svg{ max-width:100%; }
+
+  /* -------- dodatky (sv. Katarína, história) — jeden čitateľný stĺpec -------- */
+  .page-doc{ max-width:760px; }
+}
