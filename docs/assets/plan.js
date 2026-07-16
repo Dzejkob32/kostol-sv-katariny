@@ -28,14 +28,13 @@ const PLAN_NS = "http://www.w3.org/2000/svg";
 function planMarkup(lang){
   const t = k => (PLAN_I18N[k][lang] || PLAN_I18N[k].sk);
   return '' +
-'<svg class="plan-svg" viewBox="0 0 340 584" xmlns="http://www.w3.org/2000/svg"' +
+'<svg class="plan-svg" viewBox="0 20 340 562" xmlns="http://www.w3.org/2000/svg"' +
 '     role="img" aria-label="' + t("title") + '">' +
 '  <defs>' +
 '    <marker id="planAr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">' +
 '      <path d="M0,0 L7,3.5 L0,7 Z" fill="#2F7DBF"/>' +
 '    </marker>' +
 '  </defs>' +
-'  <text class="plan-dir" x="170" y="14">' + t("east") + '</text>' +
 '  <g transform="translate(0,16)">' +
      /* prístavba na východnej strane — nie je zastávkou prehliadky */
 '    <rect class="plan-aux" x="145" y="18" width="50" height="34" rx="2"/>' +
